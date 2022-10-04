@@ -1,8 +1,10 @@
 ## Clone Repo
 ~~~
 cd React-Book-Management      
-npm install    
+npm install  
+# Above command will download all dependencies for react application.
 npm start
+# After few seconds, default browser will open with running your FrontEnd.
 ~~~ 
 
 All functionalities are working except update.   
