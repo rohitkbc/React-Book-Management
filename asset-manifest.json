@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-Book-Management/static/css/main.4dd7262c.css",
+    "main.js": "/React-Book-Management/static/js/main.a6350567.js",
+    "static/js/787.e6d72910.chunk.js": "/React-Book-Management/static/js/787.e6d72910.chunk.js",
+    "index.html": "/React-Book-Management/index.html",
+    "main.4dd7262c.css.map": "/React-Book-Management/static/css/main.4dd7262c.css.map",
+    "main.a6350567.js.map": "/React-Book-Management/static/js/main.a6350567.js.map",
+    "787.e6d72910.chunk.js.map": "/React-Book-Management/static/js/787.e6d72910.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dd7262c.css",
+    "static/js/main.a6350567.js"
+  ]
+}
