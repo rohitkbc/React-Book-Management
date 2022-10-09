@@ -1,5 +1,5 @@
 import UpdateBook from "./UpdateBook"
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -9,7 +9,8 @@ const divStyle = {
 };
 
 function BookTable(props) {
-
+    const [color, setColor] = useState()
+    const [myTable, setTable] = useState()
     function deleteMe(id) {
         console.log("BookTable:", id)
         props.remove(id - 1)
@@ -28,12 +29,23 @@ function BookTable(props) {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            });
+        });
     }
+
+    useEffect(() => {
+        console.log(localStorage.getItem('theme'));
+        setColor(localStorage.getItem('theme'))
+        if (localStorage.getItem('theme') == 'white') {
+            // we want dark table
+            setTable(true)
+        } else {
+            setTable(false)
+        }
+    }, [localStorage.getItem('theme')]);
 
     return (
         <div>
-            <table className="table table-striped">
+            <table className={`table ${myTable ? "table-dark table-striped" : "table-striped"}`} style={{ color: color }}>
                 <thead>
                     <tr>
                         <th scope="col" className="text-center">#</th>
@@ -55,7 +67,7 @@ function BookTable(props) {
                                     <button type="button" class="btn btn-primary" onClick={notify}>
                                         Update
                                     </button>
-                                    <ToastContainer/>
+                                    <ToastContainer />
                                     {/* Update Component starts from here
 It is work in progress */}
                                     {/* <UpdateBook book={item} update={updateData} /> */}
