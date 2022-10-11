@@ -21,3 +21,6 @@ https://rohitkbc.github.io/React-Book-Management
 
 #### Feel free to use, edit ✏️
 
+## 🛡️ License
+This Project is licensed under the MIT License - see the LICENSE file for details
+
