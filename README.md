@@ -1,6 +1,7 @@
 ## 🛠️ Installation Steps :
 ~~~
 # First Download / Clone Repository
+# Make sure you have NodeJS installed
 cd React-Book-Management      
 npm install  
 # Above command will download all dependencies for react application.
