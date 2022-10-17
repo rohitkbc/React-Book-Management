@@ -15,7 +15,7 @@ npm start
 https://rohitkbc.github.io/React-Book-Management
 
 ## 🚧 Work Under Progress
-- [ ] Add Book Update 
+- [ ] Update Book
 
 ## 👇 Read This
 #### Contribution is always welcome 😊
