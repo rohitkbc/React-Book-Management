@@ -1,4 +1,4 @@
-## 🛠️ Installation Steps :
+## 🛠️ Installation Steps :-
 ~~~
 # First Download / Clone Repository
 # Make sure you have NodeJS installed
