@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag rohitkbc/bookapp
+      run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/bookapp
       
     - name: Docker Push
-      run: docker push rohitkbc/bookapp
+      run: docker push ${{secrets.DOCKER_USER}}/bookapp
